@@ -1,10 +1,20 @@
+* {
+  font-family: "Montserrat", Montserrat, monospace !important;
+}
+
 .App {
   text-align: center;
+  background-color: #cfcfcf;
+  min-height: 100vh;
+  position: relative;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 25vmin;
   pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +23,60 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-links {
+  font-family: "Montserrat", Montserrat, monospace;
+  font-size: 24px; /* Smaller font size for mobile */
 }
 
-.App-link {
-  color: #61dafb;
+.custom-paragraph {
+  font-size: 20px; /* Smaller font size for mobile */
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content-container {
+  padding-top: 10vmin;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .App-logo {
+    height: 20vmin; /* Reduce logo size for mobile */
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar {
+    justify-content: space-between; /* Align links to the right */
+    padding-left: 40px; /* Add padding to avoid overlap with the logo */
+  }
+
+  .navbar-links {
+    font-size: 18px; /* Smaller font size for mobile */
+  }
+
+  .content-container {
+    padding-top: 25vmin; /* Adjust padding for mobile */
+  }
+}
+
+/* Media Query for Tablets and Larger Devices */
+@media (min-width: 768px) {
+  .navbar-links {
+    font-size: 36px;
+  }
+
+  .custom-paragraph {
+    font-size: 24px;
+    max-width: 1200px;
+  }
+}
+
+/* Media Query for Desktops and Larger Devices */
+@media (min-width: 1024px) {
+  .navbar-links {
+    font-size: 40px;
+  }
+
+  .custom-paragraph {
+    font-size: 30px;
   }
 }
