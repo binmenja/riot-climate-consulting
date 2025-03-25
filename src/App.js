@@ -4,8 +4,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import Services from "./pages/Services";
 import Navbar from "./components/Navbar"; // Import Navbar component
+import Footer from "./components/Footer"; // Import Footer component
 import './App.css'; // Import App.css
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
@@ -17,11 +20,13 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/blog" element={<Blog />} />
             </Routes>
           </div>
         </div>
+        <Footer /> {/* Add the Footer component here */}
       </Router>
     </div>
   );

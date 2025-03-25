@@ -2,11 +2,31 @@
   font-family: "Montserrat", Montserrat, monospace !important;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
   text-align: center;
   background-color: #cfcfcf;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+.content-container {
+  flex: 1;
+  padding-top: 10vmin;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
   position: relative;
+  z-index: 10;
 }
 
 .App-logo {
@@ -25,36 +45,37 @@
 
 .navbar-links {
   font-family: "Montserrat", Montserrat, monospace;
-  font-size: 24px; /* Smaller font size for mobile */
+  font-size: 24px;
 }
 
 .custom-paragraph {
-  font-size: 20px; /* Smaller font size for mobile */
+  font-size: 20px;
   max-width: 100%;
   margin: 0 auto;
-}
-
-.content-container {
-  padding-top: 10vmin;
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 767px) {
   .App-logo {
-    height: 20vmin; /* Reduce logo size for mobile */
+    height: 20vmin;
   }
 
   .navbar {
-    justify-content: space-between; /* Align links to the right */
-    padding-left: 40px; /* Add padding to avoid overlap with the logo */
+    justify-content: space-between;
+    padding-left: 40px;
   }
 
   .navbar-links {
-    font-size: 18px; /* Smaller font size for mobile */
+    font-size: 18px;
   }
 
   .content-container {
-    padding-top: 25vmin; /* Adjust padding for mobile */
+    padding-top: 25vmin;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 14px;
   }
 }
 
@@ -68,6 +89,10 @@
     font-size: 24px;
     max-width: 1200px;
   }
+
+  footer {
+    font-size: 16px;
+  }
 }
 
 /* Media Query for Desktops and Larger Devices */
@@ -78,5 +103,9 @@
 
   .custom-paragraph {
     font-size: 30px;
+  }
+
+  footer {
+    font-size: 18px;
   }
 }

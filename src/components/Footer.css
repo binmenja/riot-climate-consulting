@@ -1,0 +1,8 @@
+.social-icon {
+    color: white !important;  /* Force white color */
+    text-decoration: none;    /* Remove link underline */
+}
+
+.social-icon:hover {
+    opacity: 0.75; /* Slight fade effect on hover */
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "/Users/benjaminriot/Documents/riot-climate-consulting/src/styles/Blog.css"; // Import CSS file
+import radianceComparison from '/Users/benjaminriot/Documents/riot-climate-consulting/src/assets/Radiance_Comparison_TimeWindow_202502120331.png';
 
 const Blog = () => {
   const posts = [
@@ -15,7 +16,7 @@ const Blog = () => {
           These findings have led to the writing of a new research paper that will be published in Journal of Geophysical Research: Atmospheres. A pre-print is available at the following link:
           <br />
           <a href="https://essopenarchive.org/doi/full/10.22541/essoar.174087674.44997859/v1" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
-            https://essopenarchive.org/doi/full/10.22541/essoar.174087674.44997859/v1
+          Strengthening atmospheric greenhouse effect in the Arctic evidenced by long-term records of downwelling longwave radiance spectrum
           </a>
         </>
       )
@@ -51,6 +52,9 @@ const Blog = () => {
           </ul>
           <br />
           These instruments were complemented by remote sensors, in situ NRC aircraft measurements, radiosondes, and ground-based systems at McGill University's Gault site.
+          <br />
+          <br />
+          <img src={radianceComparison} alt="Radiance Comparison" />
           <br />
           <br />
           More details can be found on the official campaign website:
